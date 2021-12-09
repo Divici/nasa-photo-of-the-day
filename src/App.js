@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from 'axios';
 import Photo from './Photo';
+import Info from './Info';
 import Explanation from "./Explanation";
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
       < Photo 
         imageURL={nasaData['hdurl']}
         title={nasaData['title']}
+      />
+      < Info 
         date={nasaData['date']}
         copyright={nasaData['copyright']}
       />
